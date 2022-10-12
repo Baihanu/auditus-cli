@@ -48,6 +48,7 @@ EXTRA_APPS = ['widget_tweaks', 'django_extensions', 'test_without_migrations']
 PROJECT_APPS = [
     'auditus.core',
     'auditus.patient',
+    'auditus.exams'
 ]
 
 INSTALLED_APPS += EXTRA_APPS
@@ -147,6 +148,8 @@ JAZZMIN_SETTINGS = {
     "order_with_respect_to": [
         'auth',
         'core',
+        'patient',
+        'exams'
     ],
 }
 
